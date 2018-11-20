@@ -1,3 +1,0 @@
-1. Learn Git
-2. Go to sleep
-3. End
