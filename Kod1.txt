@@ -1,0 +1,38 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int a, b, c;
+            Console.WriteLine("Podaj d³ugoœæ 1szego boku trójk¹ta a=");
+            a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Podaj d³ugoœæ 2go boku trójk¹ta b=");
+            b = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Podaj d³ugoœæ 3go boku trójk¹ta c=");
+            c = Convert.ToInt32(Console.ReadLine());
+
+            if ((a == 0) || (b == 0) || (c == 0))
+                Console.WriteLine("Jedna z dlugosci wynosi zero");
+            if (a + b > c)
+                Console.WriteLine("Z trzech odcinków mozna zbudowaæ tójk¹t");
+            else if (a + c > b)
+                Console.WriteLine("Z trzech odcinków mozna zbudowaæ tójk¹t");
+            else if (b + c > a)
+                Console.WriteLine("Z trzech odcinków mozna zbudowaæ tójk¹t");
+            else
+                Console.WriteLine("Z podanych odcinków nie da siê zbudowaæ trójk¹ta");
+
+            Console.ReadKey();
+        }
+
+
+    }
+}
+
